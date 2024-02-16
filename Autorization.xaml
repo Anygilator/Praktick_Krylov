@@ -5,8 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Praktick_Krylov"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
-    </Grid>
+        Title="Авторизация" Height="450" Width="800">
+    <StackPanel Height="150" Width="300">
+        <Label Content="Логин"/>
+        <TextBox Name="TB_Aut_Log"/>
+        <Label Content="Пароль"/>
+        <TextBox Name="TB_Aut_Reg"/>
+        <Label/>
+        <Button Content="Вход"/>
+        <Label/>
+        <Button Content="Нет аккаунта?"/>
+    </StackPanel>
 </Window>

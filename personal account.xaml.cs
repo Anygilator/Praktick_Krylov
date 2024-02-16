@@ -10,19 +10,25 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Praktick_Krylov
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Логика взаимодействия для personal_account.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class personal_account : Window
     {
-        public MainWindow()
+        public personal_account()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Shop shop = new Shop();
+            shop.Show();
+            this.Hide();
         }
     }
 }
