@@ -22,6 +22,9 @@ namespace Praktick_Krylov
         public Shop()
         {
             InitializeComponent();
+            var abc = new AppDbContext();
+            Shoping.ItemsSource = abc.Tovar.ToList();
         }
+        
     }
 }

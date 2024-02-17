@@ -11,6 +11,13 @@
                 </Style>
             </Style.Resources>
         </Style>
+        <Style TargetType="Rectangle">
+            <Style.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Style.Resources>
+        </Style>
         <Style x:Key="SP" TargetType="StackPanel">
             <Style.Resources>
                 <Style TargetType="Border">

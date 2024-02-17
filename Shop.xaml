@@ -6,20 +6,30 @@
         xmlns:local="clr-namespace:Praktick_Krylov"
         mc:Ignorable="d"
         Title="Shop" Height="450" Width="800">
-    <StackPanel>
-        <Label/>
-        <StackPanel Orientation="Horizontal">
-            <Label/>
-            <Border BorderBrush="Black" BorderThickness="1" CornerRadius="5">
-                <StackPanel Width="200" Height="287">
-                    <Rectangle Width="200" Height="200" Fill ="Red"></Rectangle>
-                    <TextBlock FontSize="17" Text="Мазь" FontWeight="Black"/>
-                    <TextBlock FontSize="15" Text="150$"/>
-                    <TextBlock FontSize="11" Text="144 осталось" FontWeight="Thin"/>
-                    <Label/>
-                    <Button Content="В корзину"/>
-                </StackPanel>
-            </Border>
-        </StackPanel>   
-    </StackPanel>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <ListView Grid.Row="1" Name="Shoping">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Grid Margin="20" Width="400">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="100"/>
+                            <RowDefinition Height="30"/>
+                            <RowDefinition Height="35"/>
+                            <RowDefinition Height="30"/>
+                            <RowDefinition Height="30"/>
+                        </Grid.RowDefinitions>
+                        <Image Source="{Binding Pic}"/>
+                        <TextBlock Text="{Binding Nazv}" VerticalAlignment="Center" TextAlignment="Center" Width="390" TextWrapping="Wrap" HorizontalAlignment="Center" FontSize="20" Grid.Row="1"/>
+                        <TextBlock Text="{Binding Stoimost}" VerticalAlignment="Center" TextAlignment="Center" Width="390" TextWrapping="Wrap" HorizontalAlignment="Center" FontSize="15" Grid.Row="2"/>
+                        <TextBlock Text="{Binding Kolvo}" VerticalAlignment="Center" TextAlignment="Center" Width="390" TextWrapping="Wrap" HorizontalAlignment="Center" FontSize="18" Grid.Row="3"/>
+                        <Button Name="{Binding ID}"/>
+                    </Grid>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </Grid>
 </Window>

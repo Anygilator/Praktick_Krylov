@@ -12,8 +12,8 @@
         <Label Content="Пароль"/>
         <TextBox Name="TB_Aut_Reg"/>
         <Label/>
-        <Button Content="Вход"/>
+        <Button Content="Вход" Click="Button_Click_1"/>
         <Label/>
-        <Button Content="Нет аккаунта?"/>
+        <Button Content="Нет аккаунта?" Click="Button_Click"/>
     </StackPanel>
 </Window>
