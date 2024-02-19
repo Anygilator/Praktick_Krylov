@@ -33,6 +33,8 @@ namespace Praktick_Krylov
         public int Kolvo { get; set; }
 
         public int Stoimost { get; set; }
+
+        public string Pic { get; set; }
     }
     
 }

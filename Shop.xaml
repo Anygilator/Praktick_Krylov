@@ -11,10 +11,15 @@
             <RowDefinition Height="Auto"></RowDefinition>
             <RowDefinition Height="*"></RowDefinition>
         </Grid.RowDefinitions>
-        <ListView Grid.Row="1" Name="Shoping">
+        <ListView Grid.Row="1" Name="ListOfTovar" SelectionChanged="ListOfTovar_SelectionChanged">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <Grid Margin="20" Width="400">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="auto"/>
+                        </Grid.ColumnDefinitions>
                         <Grid.RowDefinitions>
                             <RowDefinition Height="100"/>
                             <RowDefinition Height="30"/>
@@ -22,11 +27,18 @@
                             <RowDefinition Height="30"/>
                             <RowDefinition Height="30"/>
                         </Grid.RowDefinitions>
-                        <Image Source="{Binding Pic}"/>
+                        <Image>
+                            <Image.Source>
+                                <Binding Path="Pic">
+                                    <Binding.TargetNullValue>
+                                        <ImageSource>C:\Users\student\Desktop\Praktick_Krylov-master\Pic\Image1.jpg</ImageSource>
+                                    </Binding.TargetNullValue>
+                                </Binding>
+                            </Image.Source>
+                        </Image>
                         <TextBlock Text="{Binding Nazv}" VerticalAlignment="Center" TextAlignment="Center" Width="390" TextWrapping="Wrap" HorizontalAlignment="Center" FontSize="20" Grid.Row="1"/>
                         <TextBlock Text="{Binding Stoimost}" VerticalAlignment="Center" TextAlignment="Center" Width="390" TextWrapping="Wrap" HorizontalAlignment="Center" FontSize="15" Grid.Row="2"/>
                         <TextBlock Text="{Binding Kolvo}" VerticalAlignment="Center" TextAlignment="Center" Width="390" TextWrapping="Wrap" HorizontalAlignment="Center" FontSize="18" Grid.Row="3"/>
-                        <Button Name="{Binding ID}"/>
                     </Grid>
                 </DataTemplate>
             </ListView.ItemTemplate>
