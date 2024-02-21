@@ -22,6 +22,7 @@ namespace Praktick_Krylov
         public Registration()
         {
             InitializeComponent();
+            
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)

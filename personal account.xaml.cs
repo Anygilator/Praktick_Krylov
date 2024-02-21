@@ -21,6 +21,7 @@ namespace Praktick_Krylov
     {
         public personal_account()
         {
+            MainWindow mainWindow = new MainWindow();
             InitializeComponent();
         }
 
@@ -29,6 +30,7 @@ namespace Praktick_Krylov
             Shop shop = new Shop();
             shop.Show();
             this.Hide();
+            
         }
     }
 }

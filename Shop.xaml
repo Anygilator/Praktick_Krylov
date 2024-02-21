@@ -11,7 +11,7 @@
             <RowDefinition Height="Auto"></RowDefinition>
             <RowDefinition Height="*"></RowDefinition>
         </Grid.RowDefinitions>
-        <ListView Grid.Row="1" Name="ListOfTovar" SelectionChanged="ListOfTovar_SelectionChanged">
+        <ListView Grid.Row="1" Name="ListOfTovar" SelectionChanged="ListOfTovar_SelectionChanged" MouseDoubleClick="AAAda">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <Grid Margin="20" Width="400">
@@ -31,7 +31,7 @@
                             <Image.Source>
                                 <Binding Path="Pic">
                                     <Binding.TargetNullValue>
-                                        <ImageSource>C:\Users\student\Desktop\Praktick_Krylov-master\Pic\Image1.jpg</ImageSource>
+                                        <ImageSource>C:\Users\kkryl\OneDrive\Рабочий стол\Praktick_Krylov-master\Image1.png</ImageSource>
                                     </Binding.TargetNullValue>
                                 </Binding>
                             </Image.Source>

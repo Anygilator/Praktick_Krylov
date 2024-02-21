@@ -8,8 +8,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Pic\Pic1.jpg" />
-    <None Remove="Pic\Pic2.jpeg" />
+    <Compile Remove="Pic\**" />
+    <EmbeddedResource Remove="Pic\**" />
+    <None Remove="Pic\**" />
+    <Page Remove="Pic\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Photo\Pic1.jpg" />
   </ItemGroup>
 
   <ItemGroup>
@@ -22,8 +28,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Pic\Pic1.jpg" />
-    <Resource Include="Pic\Pic2.jpeg" />
+    <Resource Include="Photo\Pic1.jpg" />
   </ItemGroup>
 
 </Project>

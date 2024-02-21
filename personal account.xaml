@@ -7,8 +7,7 @@
         mc:Ignorable="d"
         Title="personal_account" Height="450" Width="800">
     <StackPanel VerticalAlignment="Bottom">
-        <Label Content="Корзина" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-
+        <TextBlock Text="Корзина" VerticalAlignment="Center" HorizontalAlignment="Center"/>
         <StackPanel Height="362" Width="700">
             
         </StackPanel>

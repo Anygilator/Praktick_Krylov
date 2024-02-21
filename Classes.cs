@@ -11,6 +11,7 @@ namespace Praktick_Krylov
     {
         public DbSet<User> Users { get; set; }
         public DbSet<Tovar> Tovar { get; set; }
+        public DbSet<Korzina> Korzina { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -37,4 +38,11 @@ namespace Praktick_Krylov
         public string Pic { get; set; }
     }
     
+    public class Korzina
+    {
+        public int Id { get; set; }
+        public int User { get; set;}
+    
+        public int Tovar { get; set;}
+    }
 }

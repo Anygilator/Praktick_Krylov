@@ -20,6 +20,7 @@ namespace Praktick_Krylov
     /// </summary>
     public partial class MainWindow : Window
     {
+        public string LoginIn;
         public MainWindow()
         {
             InitializeComponent();
@@ -43,8 +44,11 @@ namespace Praktick_Krylov
             {
                 MessageBox.Show("Здравствуйте " + TB_Aut_Log.Text);
                 personal_account personal_Account = new personal_account();
+                LoginIn = TB_Aut_Log.Text;
                 personal_Account.Show();
                 this.Hide();
+                Shop shop = new Shop();
+                shop.ShopperId = context.Users.Where(x => x.Login == TB_Aut_Log.Text).FirstOrDefault().Id;
             }
         }
     }
