@@ -27,9 +27,9 @@ namespace Praktick_Krylov
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Shop shop = new Shop();
-            shop.Show();
-            this.Hide();
+            //Shop shop = new Shop();
+            //shop.Show();
+            //this.Hide();
             
         }
     }

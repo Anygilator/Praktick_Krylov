@@ -43,12 +43,10 @@ namespace Praktick_Krylov
             else
             {
                 MessageBox.Show("Здравствуйте " + TB_Aut_Log.Text);
-                personal_account personal_Account = new personal_account();
-                LoginIn = TB_Aut_Log.Text;
-                personal_Account.Show();
+                var id = context.Users.Where(x => x.Login == TB_Aut_Log.Text).SingleOrDefault().Id;
+                Shop shop = new Shop(id);
+                shop.Show();
                 this.Hide();
-                Shop shop = new Shop();
-                shop.ShopperId = context.Users.Where(x => x.Login == TB_Aut_Log.Text).FirstOrDefault().Id;
             }
         }
     }

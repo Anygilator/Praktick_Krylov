@@ -15,6 +15,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="Photo\1.png" />
+    <None Remove="Photo\ImagePatern.png" />
     <None Remove="Photo\Pic1.jpg" />
   </ItemGroup>
 
@@ -28,7 +30,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Photo\Pic1.jpg" />
+    <Resource Include="Photo\1.png" />
+    <Resource Include="Photo\ImagePatern.png" />
   </ItemGroup>
 
 </Project>

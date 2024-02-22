@@ -44,5 +44,6 @@ namespace Praktick_Krylov
         public int User { get; set;}
     
         public int Tovar { get; set;}
+        public int Kolvo { get; set;}
     }
 }
