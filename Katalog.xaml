@@ -37,14 +37,14 @@
                             <Image.Source>
                                 <Binding Path="Pic">
                                     <Binding.TargetNullValue>
-                                        <ImageSource>C:\Users\kkryl\OneDrive\Рабочий стол\Praktick_Krylov-master\Image1.png</ImageSource>
+                                        <ImageSource>C:\Users\kkryl\OneDrive\Рабочий стол\WpfApp1\WpfApp1\Image1.png</ImageSource>
                                     </Binding.TargetNullValue>
                                 </Binding>
                             </Image.Source>
                         </Image>
                         <TextBlock Text="{Binding Nazv}" VerticalAlignment="Center" TextAlignment="Center" Width="390" TextWrapping="Wrap" HorizontalAlignment="Center" FontSize="20" Grid.Row="1"/>
                         <TextBlock Text="{Binding Stoimost, StringFormat={}${0}}" VerticalAlignment="Center" TextAlignment="Center" Width="390" TextWrapping="Wrap" HorizontalAlignment="Center" FontSize="15" Grid.Row="2"/>
-                        <TextBlock Text="{Binding Kolvo, StringFormat={} В корзине{0}}" VerticalAlignment="Center" TextAlignment="Center" Width="390" TextWrapping="Wrap" HorizontalAlignment="Center" FontSize="13" Grid.Row="3"/>
+                        <TextBlock Text="{Binding Kolvo, StringFormat={}Осталось {0}}" VerticalAlignment="Center" TextAlignment="Center" Width="390" TextWrapping="Wrap" HorizontalAlignment="Center" FontSize="13" Grid.Row="3"/>
                         <ComboBox Text="Описание" Grid.Row="4">
                             <ComboBoxItem Content="Описание" IsSelected="True" IsEnabled="False"/>
                             <ComboBoxItem Content="{Binding Opis}" IsEnabled="False"/>
